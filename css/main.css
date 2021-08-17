@@ -1,0 +1,312 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700|Montserrat:300,400,600,700&display=swap');
+
+:root {
+    --lateral-padding: 0 5% 0 5%;
+    --main-type-font: 'Comfortaa', serif;
+    --content-type-font: 'Montserrat', sans-serif;
+    --principal-green: #008483;
+    --dark-green: #05504F;
+    --grey: #E4EAEA;
+    --white: #FEFEFE;
+    font-size: 16px;
+}
+
+/* FONTS */
+
+h1 {
+    font-family: var(--main-type-font);
+    font-size: 6rem;
+    color: var(--principal-green);
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-family: var(--main-type-font);
+    font-size: 2rem;
+    color: var(--principal-green);
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-family: var(--content-type-font);
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: var(--principal-green);
+    margin-bottom: 2rem;
+}
+
+p {
+    font-family: var(--content-type-font);
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: var(--principal-green);
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    font-family: var(--content-type-font);
+    font-size: 0.8rem;
+    line-height: 1rem;
+    color: var(--principal-green);
+}
+
+a:link {
+    color: var(--principal-green);
+}
+
+a:visited {
+    color: var(--dark-green);
+}
+
+a:hover {
+    color: var(--dark-green);
+}
+
+.container {
+    padding: var(--lateral-padding);
+}
+
+/* TOPO */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+/* LANDING PAGE */
+
+.landingPage {
+background-color: var(--white);
+}
+
+.landingPage .container {
+    padding-top: 5%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.content {
+    width: 45%;
+}
+
+.profileImage {
+    width: 35%;
+    background-image: url('../images/erika.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 60%;
+    filter: drop-shadow(34px 55px 69px rgba(0, 0, 0, 0.5));
+}
+
+.illustration1 {
+    position: absolute;
+    right: 20%;
+    top: -10%;
+}
+
+/* PRODUTOS */
+
+.work {
+    background-color: var(--grey);
+    position: relative;
+}
+
+.work .illustration2 {
+    position: absolute;
+    left: -10%;
+    bottom: 0;
+}
+
+.work .container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.whiteSpace {
+    width: 30%;
+}
+
+.contentSpace {
+    width: 70%;
+    margin: 3% 0 3% 0;
+}
+
+.product {
+    margin-right: 5%;
+    padding-top: 3%;
+    height: 33%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.productImage {
+    width: 40%;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(34px 55px 69px rgba(0, 0, 0, 0.5));
+}
+
+.productDescription {
+    width: 60%;
+    padding-left: 5%;
+}
+
+.productImage1 {
+    background-image: url(../images/clinica.jpeg);
+}
+
+.productImage2 {
+    background-image: url(../images/mommyToBe.jpeg);
+}
+
+.productImage3 {
+    background-image: url(../images/giftCard.jpeg);
+}
+
+/* RODAPE */
+
+footer {
+    background-color: var(--principal-green);
+    position: relative;
+    padding: 5% 0 5% 0;
+}
+
+footer .container {
+    margin-left: 5%;
+}
+
+.place h3 {
+    color: var(--white);
+}
+
+.place p {
+    color: var(--white);
+}
+
+.mapMobile {
+    display: none;
+}
+
+.illustration3 {
+    position: absolute;
+    right: 0;
+    top: -20%;
+}
+
+.socialMedia {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: var(--principal-green);
+    border: none;
+    padding: 0 0 5% 0;
+}
+
+/* MOBILE */
+
+@media (max-width: 500px) {
+    h1 {
+        font-family: var(--main-type-font);
+        font-size: 4rem;
+        color: var(--principal-green);
+        margin-bottom: 1rem;
+    }
+    
+    h2 {
+        font-family: var(--main-type-font);
+        font-size: 1rem;
+        color: var(--principal-green);
+        margin-bottom: 0.8rem;
+    }
+    
+    h3 {
+        font-family: var(--content-type-font);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: var(--principal-green);
+        margin-bottom: 0.8rem;
+    }
+    
+    p {
+        font-family: var(--content-type-font);
+        line-height: 1rem;
+        font-size: 0.8rem;
+        color: var(--principal-green);
+        margin-bottom: 0.5rem;
+    }
+    
+    h4 {
+        font-family: var(--content-type-font);
+        font-size: 0.6rem;
+        line-height: 1rem;
+        color: var(--principal-green);
+    }
+    .illustration1 {
+        display: none;
+    }
+    .illustration2 {
+        display: none;
+    }
+    .illustration3 {
+        display: none;
+    }
+    .landingPage .container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: auto;  
+    }
+    .landingPage .container .content {
+        width: 100%;
+        margin-top: 35%;
+    }
+    .landingPage .container .profileImage {
+        width: 100%;
+        height: 400px;
+    }
+    .work .container {
+        height: auto;
+        padding-bottom: 5%;
+    }
+    .whiteSpace {
+        display: none;
+    }
+    .contentSpace {
+        width: 100%;
+        height: auto;
+    }
+    .product {
+        padding-top: 10%;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: space-between;
+        box-sizing: border-box;
+    }
+    .productImage {
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+        filter: drop-shadow(34px 55px 69px rgba(0, 0, 0, 0.5));
+    }
+    .productDescription {
+        width: 100%;
+    }
+    .map {
+        display: none;
+    }
+    .mapMobile {
+        display: initial;
+    }
+}
